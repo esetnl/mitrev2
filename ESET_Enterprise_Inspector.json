@@ -1,0 +1,1384 @@
+{
+	"name": "ESET Enterprise Inspector",
+	"version": "2.2",
+	"domain": "mitre-enterprise",
+	"description": "",
+	"filters": {
+		"stages": [
+			"act"
+		],
+		"platforms": [
+			"Windows",
+			"Linux",
+			"macOS"
+		]
+	},
+	"sorting": 0,
+	"viewMode": 0,
+	"hideDisabled": false,
+	"techniques": [
+		{
+			"techniqueID": "T1519",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "[M0105]_MacOS: Emond rule added/modified",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1519",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "[M0105]_MacOS: Emond rule added/modified",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1514",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "[M0407]_MacOS: Elevated execution with prompt (via authtrampoline)",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1485",
+			"tactic": "impact",
+			"score": 1,
+			"color": "",
+			"comment": "PowerShell command to remove shadow copies [C0401b]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1482",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "Dsquery was executed [A1100]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1222",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "File permissions modification attempt via PowerShell [C0302b]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1220",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "WMIC has processed an Extensible Stylesheet Language (XSL) file [A0426]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1220",
+			"tactic": "execution",
+			"score": 1,
+			"color": "",
+			"comment": "WMIC has processed an Extensible Stylesheet Language (XSL) file [A0426]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1219",
+			"tactic": "command-and-control",
+			"score": 1,
+			"color": "",
+			"comment": "VNC (Ultra/Real/Tight) application started [D0427]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1218",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "Network connection from Windows Installer (msiexec) [A0512]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1218",
+			"tactic": "execution",
+			"score": 1,
+			"color": "",
+			"comment": "Network connection from Windows Installer (msiexec) [A0512]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1207",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "Process with mimikatz-like executable metadata executed [A0423]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1203",
+			"tactic": "execution",
+			"score": 1,
+			"color": "",
+			"comment": "[N0301]_MacOS: Process crash\\hang report has been added (some application crashed\\hanged)",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1202",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "WSL2 file system process started [F0434]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1197",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "MS Office application has executed bitsadmin [A0805]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1197",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "MS Office application has executed bitsadmin [A0805]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1196",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "CPL applet module drop [F0300]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1196",
+			"tactic": "execution",
+			"score": 1,
+			"color": "",
+			"comment": "CPL applet module drop [F0300]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1191",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "Microsoft Connection Manager Profile Installer was executed [A0421]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1191",
+			"tactic": "execution",
+			"score": 1,
+			"color": "",
+			"comment": "Microsoft Connection Manager Profile Installer was executed [A0421]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1189",
+			"tactic": "initial-access",
+			"score": 1,
+			"color": "",
+			"comment": "IExplore tries to execute an unpopular process from %TMP% directory [D0401]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1188",
+			"tactic": "command-and-control",
+			"score": 1,
+			"color": "",
+			"comment": "[N0501]_MacOS: Network communication through port typical for TOR",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1185",
+			"tactic": "collection",
+			"score": 1,
+			"color": "",
+			"comment": "[N0101]_MacOS: Google Chrome profile modification by unpopular process",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1183",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "Image File Execution Options Debugger registry was modified [A0203]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1183",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "Image File Execution Options Debugger registry was modified [A0203]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1183",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "Image File Execution Options Debugger registry was modified [A0203]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1182",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "AppCertDLLs registry was modified [A0101b]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1182",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "AppCertDLLs registry was modified [A0101b]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1178",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "Process with mimikatz-like executable metadata executed [A0423]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1177",
+			"tactic": "execution",
+			"score": 1,
+			"color": "",
+			"comment": "LSASS loaded suspicious DLL [B0408]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1177",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "LSASS loaded suspicious DLL [B0408]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1176",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "[N0701]_MacOS: Chrome executing suspicious extension",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1170",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "Mshta.exe has dropped a suspicious executable [A0312]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1170",
+			"tactic": "execution",
+			"score": 1,
+			"color": "",
+			"comment": "Mshta.exe has dropped a suspicious executable [A0312]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1169",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "[M1002]_MacOS: Modification of \"sudoers\" file",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1168",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "[N0402]_MacOS: New cron job added",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1168",
+			"tactic": "execution",
+			"score": 1,
+			"color": "",
+			"comment": "[N0402]_MacOS: New cron job added",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1163",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "[M0102]_MacOS: Write to rc.common",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1162",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "[M0104]_MacOS: Manipulating with Login Items",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1160",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "[M0100]_MacOS: Launch Daemon added",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1160",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "[M0100]_MacOS: Launch Daemon added",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1159",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "[M0101]_MacOS: Launch Agent added",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1158",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "[M0304]_MacOS: Set file as hidden",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1158",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "[M0304]_MacOS: Set file as hidden",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1155",
+			"tactic": "execution",
+			"score": 1,
+			"color": "",
+			"comment": "[N0403]_MacOS: AppleScript was executed by osascript from untrusted process",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1155",
+			"tactic": "lateral-movement",
+			"score": 1,
+			"color": "",
+			"comment": "[N0403]_MacOS: AppleScript was executed by osascript from untrusted process",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1151",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "[M0301]_MacOS: Write to a file with a suspicious extension",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1151",
+			"tactic": "execution",
+			"score": 1,
+			"color": "",
+			"comment": "[M0301]_MacOS: Write to a file with a suspicious extension",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1145",
+			"tactic": "credential-access",
+			"score": 1,
+			"color": "",
+			"comment": "Process with mimikatz-like command line parameters executed [A0422]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1144",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "[M0201]_MacOS: Manipulating file quarantine flag",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1140",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "[N0401]_MacOS: Openssl decrypting data",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1139",
+			"tactic": "credential-access",
+			"score": 1,
+			"color": "",
+			"comment": "[M1003]_MacOS: Deleting history",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1138",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "Sdbinst.exe tool executed [A0418]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1138",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "Sdbinst.exe tool executed [A0418]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1137",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "Microsoft Outlook mapi32.dll registry modified by an unpopular process [A0802]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1136",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "User account was created [F0106]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1130",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "[M1004]_MacOS: Certificate added into CERT ROOT",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1127",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "MSBuild.exe from .NET Framework was executed [A0420]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1127",
+			"tactic": "execution",
+			"score": 1,
+			"color": "",
+			"comment": "MSBuild.exe from .NET Framework was executed [A0420]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1126",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "Network share connection removal via PowerShell [C0501c]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1122",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "Windows Explorer ShellServiceObjects registry entry was modified [A0114]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1122",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "Windows Explorer ShellServiceObjects registry entry was modified [A0114]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1117",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "Regsvr32.exe executed script process [A0413]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1117",
+			"tactic": "execution",
+			"score": 1,
+			"color": "",
+			"comment": "Regsvr32.exe executed script process [A0413]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1112",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "Outlook security registry was modified [F0201]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1107",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "File deletion via PowerShell [C0301b]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1105",
+			"tactic": "command-and-control",
+			"score": 1,
+			"color": "",
+			"comment": "MS Office application has executed certutil [A0804]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1105",
+			"tactic": "lateral-movement",
+			"score": 1,
+			"color": "",
+			"comment": "MS Office application has executed certutil [A0804]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1103",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "AppInit_Dlls registry was modified [A0101a]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1103",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "AppInit_Dlls registry was modified [A0101a]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1102",
+			"tactic": "command-and-control",
+			"score": 1,
+			"color": "",
+			"comment": "Unpopular process made http query to pastebin.com [D0520]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1102",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "Unpopular process made http query to pastebin.com [D0520]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1101",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "SecurityProviders registry was modified [A0125]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1100",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "Python backdoor activity - child process [F0401]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1100",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "Python backdoor activity - child process [F0401]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1098",
+			"tactic": "credential-access",
+			"score": 1,
+			"color": "",
+			"comment": "User was removed from administrator group [F1001]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1098",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "User was removed from administrator group [F1001]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1097",
+			"tactic": "lateral-movement",
+			"score": 1,
+			"color": "",
+			"comment": "Process with mimikatz-like executable metadata executed [A0423]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1096",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "Zone.Identifier deleted by an unpopular process [A0302]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1091",
+			"tactic": "lateral-movement",
+			"score": 1,
+			"color": "",
+			"comment": "Process has started from a removable drive [Z0401]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1091",
+			"tactic": "initial-access",
+			"score": 1,
+			"color": "",
+			"comment": "Process has started from a removable drive [Z0401]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1090",
+			"tactic": "command-and-control",
+			"score": 1,
+			"color": "",
+			"comment": "Dynamic DNS provider connection [A0506]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1090",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "Dynamic DNS provider connection [A0506]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1089",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "[N0201]_MacOS: Firewall rules manipulation",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1088",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "UAC bypass registry modifications [D0217]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1088",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "UAC bypass registry modifications [D0217]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1087",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "Dsquery was executed [A1100]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1086",
+			"tactic": "execution",
+			"score": 1,
+			"color": "",
+			"comment": "Wmic.exe was executed from script interpreter [A0424b]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1085",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "Suspicious execution using RunDLL32 [B0409]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1085",
+			"tactic": "execution",
+			"score": 1,
+			"color": "",
+			"comment": "Suspicious execution using RunDLL32 [B0409]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1084",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "Windows Management Instrumentation event subscription [A0144]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1083",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "File and Directory Discovery [F1101]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1082",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "System Information Discovery [F1107]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1081",
+			"tactic": "credential-access",
+			"score": 1,
+			"color": "",
+			"comment": "Process with mimikatz-like command line parameters executed [A0422]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1077",
+			"tactic": "lateral-movement",
+			"score": 1,
+			"color": "",
+			"comment": "Remote execution using PsExec [B0901]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1078",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "Remote user login [F0900]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1078",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "Remote user login [F0900]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1078",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "Remote user login [F0900]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1078",
+			"tactic": "initial-access",
+			"score": 1,
+			"color": "",
+			"comment": "Remote user login [F0900]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1076",
+			"tactic": "lateral-movement",
+			"score": 1,
+			"color": "",
+			"comment": "Terminal Server remote connection was enabled [A0902]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1075",
+			"tactic": "lateral-movement",
+			"score": 1,
+			"color": "",
+			"comment": "Process with mimikatz-like executable metadata executed [A0423]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1073",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "LSASS loaded suspicious DLL [B0408]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1071",
+			"tactic": "command-and-control",
+			"score": 1,
+			"color": "",
+			"comment": "Unpopular process made suspicious http query [D0519]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1070",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "PowerShell script tries to modify or delete shadow copies [C0401c]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1069",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "Permission Groups Discovery [F1102]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1068",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "Werfault launched process with high privilege [D0431]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1064",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "Wscript.exe executed a process [A0415]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1064",
+			"tactic": "execution",
+			"score": 1,
+			"color": "",
+			"comment": "Wscript.exe executed a process [A0415]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1060",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "Suspicious executable created in %startup% folder [A0127b]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1059",
+			"tactic": "execution",
+			"score": 1,
+			"color": "",
+			"comment": "Cmd.exe executed with '/c' by an unpopular process [A0400]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1057",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "Process Hacker application has been executed [C0402]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1055",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "Injection into trusted process [F0414]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1055",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "Injection into trusted process [F0414]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1054",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "Security Options: Clear pagefile on shutdown enabled [A0211a]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1053",
+			"tactic": "execution",
+			"score": 1,
+			"color": "",
+			"comment": "Unpopular process executed from a Scheduled Task [F0411]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1053",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "Unpopular process executed from a Scheduled Task [F0411]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1053",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "Unpopular process executed from a Scheduled Task [F0411]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1050",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "New service creation attempt via PowerShell [C0406b]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1050",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "New service creation attempt via PowerShell [C0406b]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1049",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "System Network Connections Discovery [F1111]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1048",
+			"tactic": "exfiltration",
+			"score": 1,
+			"color": "",
+			"comment": "An uncommonly long DNS request [A0515]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1047",
+			"tactic": "execution",
+			"score": 1,
+			"color": "",
+			"comment": "Wmic.exe was executed by Microsoft Office application [A0424d]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1045",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "Unpopular process executed from Rar/7zip sfx [D0416]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1042",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "[N0102]_MacOS: File association for execution changed",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1041",
+			"tactic": "exfiltration",
+			"score": 1,
+			"color": "",
+			"comment": "An uncommonly long DNS request [A0515]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1038",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "LSASS loaded suspicious DLL [B0408]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1038",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "LSASS loaded suspicious DLL [B0408]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1038",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "LSASS loaded suspicious DLL [B0408]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1037",
+			"tactic": "lateral-movement",
+			"score": 1,
+			"color": "",
+			"comment": "MPR (Multiple Provider Router) registry was modified [A0129]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1037",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "MPR (Multiple Provider Router) registry was modified [A0129]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1036",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "[M0301]_MacOS: Write to a file with a suspicious extension",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1035",
+			"tactic": "execution",
+			"score": 1,
+			"color": "",
+			"comment": "Suspicious service executed [B0902]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1033",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "System owner/user discovery via PowerShell [C1105b]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1031",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "Management of the services from command line [B0403]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1028",
+			"tactic": "execution",
+			"score": 1,
+			"color": "",
+			"comment": "WinRM (Remote Powershell) service set to Automatic start [D0216]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1028",
+			"tactic": "lateral-movement",
+			"score": 1,
+			"color": "",
+			"comment": "WinRM (Remote Powershell) service set to Automatic start [D0216]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1023",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "Suspicious desktop link creation [B0302]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1022",
+			"tactic": "exfiltration",
+			"score": 1,
+			"color": "",
+			"comment": "RAR encrypts and deletes files [B0601]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1021",
+			"tactic": "lateral-movement",
+			"score": 1,
+			"color": "",
+			"comment": "[M0901]_MacOS: Turn on remote login",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1018",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "Remote System Discovery [F1106]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1016",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "System Network Configuration Discovery [F1108c]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1015",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "Accessibility Features file modified [A0304]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1015",
+			"tactic": "privilege-escalation",
+			"score": 1,
+			"color": "",
+			"comment": "Accessibility Features file modified [A0304]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1012",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "Query registry via PowerShell [C1102b]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1007",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "System Service Discovery [F1110]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1004",
+			"tactic": "persistence",
+			"score": 1,
+			"color": "",
+			"comment": "Winlogon Notify registration [B0102]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1003",
+			"tactic": "credential-access",
+			"score": 1,
+			"color": "",
+			"comment": "[M1101]_MacOS: Possible credential theft by hash dumping",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1002",
+			"tactic": "exfiltration",
+			"score": 1,
+			"color": "",
+			"comment": "RAR encrypts and deletes files [B0601]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1001",
+			"tactic": "command-and-control",
+			"score": 1,
+			"color": "",
+			"comment": "An uncommonly long DNS request [A0515]",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1486",
+			"tactic": "impact",
+			"score": 1,
+			"color": "",
+			"comment": "RAR encrypts and deletes files [B0601]",
+			"enabled": true,
+			"metadata": []
+		}
+	],
+	"gradient": {
+		"colors": [
+			"#ffe766",
+			"#8ec843"
+		],
+		"minValue": 0,
+		"maxValue": 1
+	},
+	"legendItems": [],
+	"metadata": [],
+	"showTacticRowBackground": false,
+	"tacticRowBackground": "#dddddd",
+	"selectTechniquesAcrossTactics": true
+}
